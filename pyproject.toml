@@ -1,0 +1,20 @@
+[project]
+name = "simple-agent-runtime"
+# uv가 요구하는 패키지 메타데이터이며 실행 기록·배포 버전으로 사용하지 않습니다.
+version = "0.1.0"
+requires-python = "==3.14.2"
+dependencies = [
+  "fastjsonschema>=2.21,<3",
+  "httpx>=0.28,<1",
+  "ijson>=3.4,<4",
+  "puretiktoken==0.2.1",
+]
+
+[dependency-groups]
+dev = ["uv>=0.13.4,<0.14"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+ijson = { path = "vendor/ijson-3.6.0-py3-none-any.whl" }

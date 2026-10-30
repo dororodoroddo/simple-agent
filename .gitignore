@@ -1,0 +1,24 @@
+# Local settings and secrets
+.env
+.env.*
+
+# Local runtime, generated output and dependencies
+.local/
+node_modules/
+.venv/
+python_modules/
+python/vendor/
+dist/
+/output/
+/tmp/
+
+# Python and tool caches
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.pyc
+*.egg-info/
+
+# OS metadata
+.DS_Store

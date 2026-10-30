@@ -1,0 +1,13 @@
+{
+  "name": "simple-agent",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "test": "npm run test:e2e",
+    "test:e2e": "node scripts/python-env.mjs run --no-sync python tests/e2e/agent.py",
+    "setup:python": "node scripts/python-env.mjs setup"
+  }
+}
